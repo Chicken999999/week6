@@ -84,31 +84,31 @@ tuple4 = (1, 2, 3, 4, 5, 1, 2, 3, 4, 5)  # duplicate elements are allowed
 
 
 #access elements in a tuple
-print(tuple1[0])
-print(tuple2[1])
-print(tuple3[2])
-print(tuple4) # also prints duplicate values
-print(tuple4[-1])
+# print(tuple1[0])
+# print(tuple2[1])
+# print(tuple3[2])
+# print(tuple4) # also prints duplicate values
+# print(tuple4[-1])
 
-#find the length of a tuple
-print(len(tuple1))
-print(len(tuple2))
-print(len(tuple3))
-print(len(tuple4))
+# #find the length of a tuple
+# print(len(tuple1))
+# print(len(tuple2))
+# print(len(tuple3))
+# print(len(tuple4))
 
-#count the number of occurrences of an element in a tuple
-print(tuple4.count(3))  # output = 2
-print(tuple4.count(6))  #output = 0
+# #count the number of occurrences of an element in a tuple
+# print(tuple4.count(3))  # output = 2
+# print(tuple4.count(6))  #output = 0
 
-#find the index of an element in a tuple
-print(tuple1.index(3))  #output = 2
-print(tuple2.index("banana"))  # ouput = 1
+# #find the index of an element in a tuple
+# print(tuple1.index(3))  #output = 2
+# print(tuple2.index("banana"))  # ouput = 1
 
-#convert a tuple to a list
-print(list(tuple1))
+# #convert a tuple to a list
+# print(list(tuple1))
 
-#convert a list to a tuple
-print(tuple(list(tuple1)))
+# #convert a list to a tuple
+# print(tuple(list(tuple1)))
 
 
 
@@ -136,25 +136,20 @@ and you may call me V."""
 
 
 # Convert the text to a tuple of characters
-print()
-
+tuple_list = (tuple(text))
 
 
 # Tuple to store the target characters
-
-
-
-
+occurance = tuple_list.count("v")
+occurance2 = tuple_list.count("V")
 
 
 # Count occurrences of 'v' or 'V' by filtering the text_tuple
-
-
+result = int(occurance) + int(occurance2)
 
 
 # Output the result
-
-
+print(result)
 
 
 # dictionarys Accessing a Value from a Nested List###############################
@@ -164,26 +159,36 @@ print()
 
 sample_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 # get length of the list
-#print(len(sample_list)) # Output: 3
-#this is called a nested list
-# Extract and print the second element from the first list
+# print(sample_list[0])
+# print(sample_list[1])
+# print(sample_list[2])
+# print(len(sample_list)) # Output: 3
+# #this is called a nested list
 
+# #esxtarct the 8 our of the list 
+# print(sample_list[2][1])
+# print(sample_list[1][2])
+# print(sample_list[0][2])
+# print(sample_list[2][0])
+
+# Extract and print the second element from the first list
+# print(sample_list[0][1])
 
 sample_list_of_fruit = {"fruits": ["apple", "banana", "cherry"]}
 # Extract and print the second fruit from the list
-
+print(sample_list_of_fruit["fruits"][1])
 
 sample_list_of_lists = {"lists": [[1, 2, 3], [4, 5, 6], [7, 8, 9]]}
 # Extract and print the third element from the second list
-
-
-
+print(sample_list_of_lists["lists"][1][2])  # prints 6
+print(sample_list_of_lists["lists"][2][2])  # prints 9
+print(sample_list_of_lists["lists"][0][2])  # prints 3
 
 sample_list_of_dicts = {"dicts": [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 30}, {"name": "Charlie", "age": 35}]}
 # Extract and print the age of the second person
-
-
-
+print(sample_list_of_dicts["dicts"][1]["age"])
+print(sample_list_of_dicts["dicts"][2]["name"])
+print(sample_list_of_dicts["dicts"][0]["name"])
 
 
 
